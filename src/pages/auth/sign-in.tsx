@@ -14,10 +14,13 @@ const signInForm = z.object({
 
 type SignInForm = z.infer<typeof signInForm>
 export function SignIn() {
-  const { register, handleSubmit, formState: {isSubmitting} } = useForm<SignInForm>()
+  const {
+    register,
+    handleSubmit,
+    formState: { isSubmitting },
+  } = useForm<SignInForm>()
 
   async function handleSignIn(data: SignInForm) {
-    console.log(data)
     await new Promise((resolve) => setTimeout(resolve, 2000))
     toast.success('Enviamos um link de autenticação para seu e-mail.')
   }
