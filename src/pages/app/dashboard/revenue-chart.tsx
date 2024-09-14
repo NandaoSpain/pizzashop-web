@@ -23,7 +23,7 @@ const data = [
   { date: '14/12', revenue: 800 },
   { date: '15/12', revenue: 700 },
   { date: '16/12', revenue: 320 },
-  { date: '17/12', revenue: 1900 },
+  { date: '17/12', revenue: 2900 },
 ]
 export function RevenueChart() {
   return (
@@ -52,6 +52,7 @@ export function RevenueChart() {
                 })
               }
             />
+            <CartesianGrid vertical={false} className="stroke-muted" />
             <Line type="Linear" strokeWidth={2} dataKey="revenue" />
           </LineChart>
         </ResponsiveContainer>
