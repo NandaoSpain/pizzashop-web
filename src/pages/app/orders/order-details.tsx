@@ -4,9 +4,15 @@ import {
   DialogHeader,
   DialogTitle,
 } from '@/components/ui/dialog'
-import { Table, TableBody, TableCell, TableFooter, TableHead, TableHeader, TableRow } from '@/components/ui/table'
-
-//export interface OrderDetailsProps {}
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableFooter,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from '@/components/ui/table'
 
 export function OrderDetails() {
   return (
@@ -80,10 +86,12 @@ export function OrderDetails() {
           </TableBody>
           <TableFooter>
             <TableRow>
-              <TableCell colSpan={3} className="font-medium text-right">
+              <TableCell colSpan={3} className="text-right font-medium">
                 Total
               </TableCell>
-              <TableCell className="font-medium text-right">R$ 104,50</TableCell>
+              <TableCell className="text-right font-medium">
+                R$ 104,50
+              </TableCell>
             </TableRow>
           </TableFooter>
         </Table>
