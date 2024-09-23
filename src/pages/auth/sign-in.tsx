@@ -38,7 +38,7 @@ export function SignIn() {
       toast.success('Enviamos um link de autenticação para seu e-mail.', {
         action: {
           label: 'Reenviar',
-          onclick: () => handleSignIn(data),
+          onClick: () => handleSignIn(data),
         },
       })
     } catch {

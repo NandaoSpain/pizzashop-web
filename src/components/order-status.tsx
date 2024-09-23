@@ -35,5 +35,4 @@ export function OrderStatus({ status }: OrderStatusProps) {
       </span>
     </div>
   )
-
 }
